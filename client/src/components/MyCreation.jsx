@@ -11,7 +11,7 @@ const MyCreation = () => {
 
     const [data, setData] = useState([])
     const fatchData = async () => {
-        const data = axios.get("http://localhost:3000/api/travel").then(e => {
+        const data = axios.get("https://husan-art-mxpi.vercel.app/api/travel").then(e => {
             setData([...e.data.travel])
         })
     }
