@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.containerb {
+  @apply w-full max-w-[1340px] px-5 mx-auto;
+}
+
+.myFont {
+  font-family: Montserrat;
+}
+
+.secondFont {
+  font-family: Antema;
+}
+
+.setClassic {
+  position: relative;
+  overflow: hidden;
+}
+
+.setClassic .swiper-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+
+* {
+  user-select: none;
+  outline: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.borderText {
+  -webkit-text-stroke-color: #0e0e0e;
+  -webkit-text-stroke-width: 2px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-button-prev {
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 30;
+  left: 5%;
+  right: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-image: url(./assets/arrowRight.svg);
+  transform: rotate(180deg);
+  box-shadow: 0 0 1px black;
+  border-radius: 0px 10px 10px 0px;
+}
+.swiper-button-next {
+  width: 60px;
+  z-index: 30;
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+  right: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-image: url(./assets/arrowRight.svg);
+  box-shadow: 0 0 1px black;
+  border-radius: 0 10px 10px 0px;
+}
+
+.swiper-button-disabled {
+  filter: brightness(4);
+}
