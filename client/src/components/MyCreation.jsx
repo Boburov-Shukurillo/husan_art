@@ -12,7 +12,11 @@ const MyCreation = () => {
     const [data, setData] = useState([])
     const fatchData = async () => {
         const data = axios.get("https://husan-art-mxpi.vercel.app/api/travel").then(e => {
+<<<<<<< HEAD
             console.log(e);
+=======
+            setData([...e.data.travel])
+>>>>>>> f17acb5e1137748a33b8458f4845dd5d99561336
         })
     }
 
