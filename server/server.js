@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.urlencoded());
-app.use("/api/travel", require("./routes/travel_route"));
+app.use("/api/husan-art-data-base-api", require("./routes/travel_route"));
 const port = process.env.PORT;
 
 app.listen(port, () => {
